@@ -1,0 +1,125 @@
+🦴 INTO – Sistema de Material Cirúrgico do Quadril
+Aplicativo web para seleção e gerenciamento de material cirúrgico das cirurgias de quadril do Instituto Nacional de Traumatologia e Ortopedia Jamil Haddad (INTO), desenvolvido especialmente para auxiliar residentes na escolha das caixas e instrumentais corretos para cada procedimento.
+
+
+✨ Funcionalidades
+Módulo
+Descrição
+📊 Dashboard
+Visão geral com estatísticas em tempo real e acesso rápido por tipo de cirurgia
+📦 Caixas Cirúrgicas
+Catálogo completo com filtros por tipo de cirurgia, fabricante e busca livre
+🩺 Diagnósticos
+Diagnósticos clínicos vinculados a caixas e materiais recomendados
+🔩 Materiais
+Catálogo de implantes, instrumentais, descartáveis e equipamentos
+📄 Documentos
+Protocolos e fichas técnicas com link para arquivos no Google Drive
+👤 Pacientes
+Registro cirúrgico com acompanhamento por fase (pré/pós-operatório)
+🔬 Exames de Imagem
+Radiografias, tomografias e ressonâncias vinculadas ao paciente
+
+
+
+🎯 Para Residentes
+O fluxo de uso é simples:
+
+Acesse Caixas Cirúrgicas
+Filtre pelo tipo de cirurgia (ex: Artroplastia Total, Revisão, Artroscopia…)
+Filtre pelo fabricante se necessário (Zimmer Biomet, Smith & Nephew, DMO…)
+Use a busca livre para encontrar instrumentais específicos
+Clique na caixa para ver a lista completa de instrumentais
+
+
+🏗️ Arquitetura
+O projeto é um single-page app em HTML/CSS/JS puro, sem dependências de framework. Toda a persistência de dados é feita via API REST da plataforma Base44.
+
+quadril_into_app.html   ←  App completo (HTML + CSS + JS em um único arquivo)
+API
+Campo
+Valor
+Base URL
+https://ortho-link-flow.base44.app/api
+App ID
+69dd6b3d791b89ea670983cf
+Autenticação
+Header api_key
+
+Entidades da API
+SurgicalBox — Caixas cirúrgicas
+SurgicalMaterial — Materiais e instrumentais
+Diagnosis — Diagnósticos clínicos
+Patient — Pacientes
+ImagingExam — Exames de imagem
+DescriptiveDocument — Documentos descritivos
+
+
+🚀 Como usar localmente
+Não há instalação necessária. Basta baixar o arquivo e abrir no navegador:
+
+# Clone o repositório
+
+git clone https://github.com/SEU_USUARIO/into-quadril-app.git
+
+# Abra o arquivo no navegador
+
+open into-quadril-app/quadril_into_app.html
+
+Ou acesse diretamente pelo link do GitHub Pages (se configurado):
+
+https://SEU_USUARIO.github.io/into-quadril-app
+
+
+📦 Tipos de Cirurgia Suportados
+Código
+Descrição
+artroplastia_total
+Artroplastia Total de Quadril
+artroplastia_parcial
+Artroplastia Parcial
+revisao
+Cirurgia de Revisão
+artroscopia
+Artroscopia do Quadril
+osteossintese
+Osteossíntese
+geral
+Procedimentos Gerais
+
+
+
+🏭 Fabricantes Cadastrados
+Zimmer Biomet (Avenir, G7, CPT, ML Taper, Wagner SL, Trilogy IT, Dupla Mobilidade…)
+Smith & Nephew (Polarstem, R3, Mini Acetábulo…)
+DMO (Plasmafit, Metha…)
+Medacta / Osseus (Amistem, AMIS, Versafit…)
+WM (Wagner SL, NCB, ZMR…)
+Arthrex (Videoartroscopia…)
+
+
+🔧 Como Contribuir
+Faça um Fork deste repositório
+Crie uma branch com sua feature: git checkout -b feature/minha-melhoria
+Commit suas mudanças: git commit -m 'Adiciona filtro por tamanho de componente'
+Push para a branch: git push origin feature/minha-melhoria
+Abra um Pull Request
+Sugestões de melhorias futuras
+Importação em lote dos 133 documentos Word do Google Drive
+Fotos das caixas e instrumentais
+Checklist interativo por cirurgia
+Modo offline / PWA
+Integração com sistema de esterilização (datas de validade)
+Versão mobile nativa
+
+
+📋 Contexto Clínico
+Este sistema foi criado para o Grupo do Quadril do INTO, com foco em:
+
+Reduzir erros de seleção de material por residentes inexperientes
+Centralizar a informação sobre as 133+ caixas cirúrgicas catalogadas
+Facilitar o planejamento pré-operatório
+Registrar e acompanhar pacientes cirúrgicos
+
+
+📄 Licença
