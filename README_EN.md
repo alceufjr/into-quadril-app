@@ -171,8 +171,5 @@ The instrument data comes from a catalog of ~133 Word documents stored on Google
 
 
 📄 License
-Internal use — Instituto Nacional de Traumatologia e Ortopedia Jamil Haddad (INTO), Rio de Janeiro, Brazil.
-
-
-
-Built with ❤️ for the INTO Hip Surgery Group · 2026
+alceufjr/into-quadril-app is licensed under the Apache License 2.0
+A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
